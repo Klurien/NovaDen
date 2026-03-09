@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="NovaDen Enterprises — Advanced software products, business tools, and specialized tech solutions." />
+    <title>NovaDen | Advanced Technology Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logo.png" alt="NovaDen Logo" />
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#stats" class="nav-link">About</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Talk to an Expert</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="hero-bg.png" alt="" class="hero-bg-img" />
+            <div class="hero-overlay"></div>
+        </div>
+        <canvas id="particleCanvas"></canvas>
+        <div class="container">
+            <div class="hero-content" data-animate>
+                <h1 class="hero-title">
+                    Engineering the<br />
+                    <span class="typing-wrapper"><span id="typingText"></span><span class="cursor">|</span></span>
+                </h1>
+                <p class="hero-sub">We build advanced software products, specialized tools, and technical architectures
+                    for organizations demanding performance and scale.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn-primary">Our Expertise</a>
+                    <a href="#products" class="btn-secondary">View Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE LOGOS -->
+    <section class="marquee-section">
+        <div class="marquee-track-wrapper">
+            <div class="marquee-track">
+                <span class="tech-tag">REACT</span>
+                <span class="tech-tag">NODE.JS</span>
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">TYPESCRIPT</span>
+                <span class="tech-tag">NEXT.JS</span>
+                <span class="tech-tag">POSTGRESQL</span>
+                <span class="tech-tag">DOCKER</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">FLUTTER</span>
+                <span class="tech-tag">KUBERNETES</span>
+                <!-- Duplicated for seamless loop -->
+                <span class="tech-tag">REACT</span>
+                <span class="tech-tag">NODE.JS</span>
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">TYPESCRIPT</span>
+                <span class="tech-tag">NEXT.JS</span>
+                <span class="tech-tag">POSTGRESQL</span>
+                <span class="tech-tag">DOCKER</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">FLUTTER</span>
+                <span class="tech-tag">KUBERNETES</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Technical Expertise.</h2>
+                <p class="section-sub">End-to-end engineering for mission-critical software and digital infrastructure.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <span class="service-num">01</span>
+                    <h3>Custom Software</h3>
+                    <p>Complex enterprise systems designed for architectural integrity, performance, and long-term
+                        scalability.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-num">02</span>
+                    <h3>Data Solutions</h3>
+                    <p>Advanced data visualization, processing pipelines, and analytical tools that drive decision
+                        intelligence.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-num">03</span>
+                    <h3>Specialized Tools</h3>
+                    <p>Bespoke automation, internal dashboards, and utility software tailored to specialized business
+                        workflows.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-num">04</span>
+                    <h3>Web Architectures</h3>
+                    <p>High-performance web applications and platforms built with modern, secure, and resilient
+                        technologies.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-num">05</span>
+                    <h3>Mobile Engineering</h3>
+                    <p>Native and cross-platform mobile experiences crafted with precision for demanding user
+                        requirements.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <span class="service-num">06</span>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Robust infrastructure management, CI/CD automation, and cloud-native strategies for 24/7
+                        reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS / PORTFOLIO -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Selected Work</span>
+                <h2 class="section-title">Case Studies.</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-animate>
+                    <div class="product-img-wrap" style="background: linear-gradient(135deg, #111, #1a1a1a);"></div>
+                    <div class="product-info">
+                        <h3>ShopFlow Enterprise</h3>
+                        <p>Architecting a global e-commerce engine with real-time analytics and inventory
+                            synchronization.</p>
+                    </div>
+                </div>
+                <div class="product-card" data-animate>
+                    <div class="product-img-wrap" style="background: linear-gradient(135deg, #1a1a1a, #111);"></div>
+                    <div class="product-info">
+                        <h3>MediConnect Hub</h3>
+                        <p>Developing a secure telemedicine architecture for cross-border healthcare delivery.</p>
+                    </div>
+                </div>
+                <div class="product-card" data-animate>
+                    <div class="product-img-wrap" style="background: linear-gradient(135deg, #050505, #111);"></div>
+                    <div class="product-info">
+                        <h3>TaskPulse Engine</h3>
+                        <p>Scaling a project management platform to handle massive team collaboration in real-time.</p>
+                    </div>
+                </div>
+                <div class="product-card" data-animate>
+                    <div class="product-img-wrap" style="background: linear-gradient(135deg, #111, #050505);"></div>
+                    <div class="product-info">
+                        <h3>FinEdge Analytics</h3>
+                        <p>Precise financial dashboarding for SMEs with predictive modeling and automated reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Impact</span>
+                <h2 class="section-title">By the Numbers.</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-animate>
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-label">Deployments</span>
+                </div>
+                <div class="stat-card" data-animate>
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-label">Client Retention</span>
+                </div>
+                <div class="stat-card" data-animate>
+                    <span class="stat-number" data-target="30">0</span>
+                    <span class="stat-label">Engineers</span>
+                </div>
+                <div class="stat-card" data-animate>
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Years Operating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Minds Behind the Company</span>
+                <h2 class="section-title">The Engineering Team.</h2>
+                <p class="section-sub">A specialized collective of architects and developers committed to technical
+                    excellence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-animate>
+                    <div class="team-avatar">JN</div>
+                    <div class="team-info">
+                        <h4>James Nova</h4>
+                        <span class="team-role">CEO & Co-Founder</span>
+                        <p>Product strategist and enterprise architect focused on systemic innovation.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-animate>
+                    <div class="team-avatar">AM</div>
+                    <div class="team-info">
+                        <h4>Aisha Mwangi</h4>
+                        <span class="team-role">Chief Technology Officer</span>
+                        <p>Expert in distributed systems, high-frequency data, and cloud infrastructure.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-animate>
+                    <div class="team-avatar">DK</div>
+                    <div class="team-info">
+                        <h4>David Kimani</h4>
+                        <span class="team-role">Head of Product Design</span>
+                        <p>Focusing on the intersection of human experience and complex data systems.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-animate>
+                    <div class="team-avatar">SO</div>
+                    <div class="team-info">
+                        <h4>Sofia Okonkwo</h4>
+                        <span class="team-role">Head of Engineering</span>
+                        <p>Ensuring architectural integrity and performance across all product cycles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <p>"NovaDen delivers more than just code. They deliver architectural integrity and strategic
+                        clarity."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Rachel Barnes</div>
+                        <div class="author-company">CEO, MarketHub Ltd</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <p>"Their work on HealthLink has redefined what's possible in mobile patient care in remote
+                        regions."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Kevin Osei</div>
+                        <div class="author-company">Founder, HealthLink</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <p>"Partnering with their engineering team was the single best technical decision we've made."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Tanya Morales</div>
+                        <div class="author-company">COO, FinEdge Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left" data-animate>
+                    <span class="section-tag">Inquiry</span>
+                    <h2 class="section-title">Start a Conversation.</h2>
+                    <p class="section-sub">We are currently accepting new projects for Q3 2026. Reach out to our
+                        engineering team to discuss your requirements.</p>
+                    <a href="mailto:kluriendenova@gmail.com" class="email-link">kluriendenova@gmail.com</a>
+                </div>
+                <div class="contact-right" data-animate>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your full name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="yourname@company.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Requirements</label>
+                            <textarea id="message" rows="4" required
+                                placeholder="Briefly describe your technical needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full" id="submitBtn">Submit Brief</button>
+                        <div id="formSuccess" style="display:none; margin-top: 20px; font-weight: 700;">Submission
+                            received. We will contact you shortly.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="NovaDen Logo" />
+                    <p style="color: var(--text-muted); font-size: 13px; margin-top: 24px; line-height:1.7;">Advancing
+                        business through technical excellence and architectural integrity.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Focus Areas</h5>
+                    <ul>
+                        <li><a href="#">Enterprise Software</a></li>
+                        <li><a href="#">Data Visualization</a></li>
+                        <li><a href="#">Technical Audits</a></li>
+                        <li><a href="#">Cloud Migration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Office</h5>
+                    <p style="color: var(--text-muted); font-size: 13px; font-weight: 500;">Nairobi,
+                        Kenya<br />kluriendenova@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 NovaDen Enterprises. All rights reserved.</div>
+                <div style="display:flex; gap: 32px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Legal Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
