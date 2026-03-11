@@ -2,8 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===== NAVBAR SCROLL EFFECT ===== */
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-link');
+  let lastScrollY = window.scrollY;
 
   window.addEventListener('scroll', () => {
+    // Retractable logic
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      navbar.classList.add('navbar-hidden'); // hide when scrolling down
+    } else {
+      navbar.classList.remove('navbar-hidden'); // show when scrolling up
+    }
+    lastScrollY = window.scrollY;
+
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
@@ -13,21 +22,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update active link on scroll
     let current = '';
     const sections = document.querySelectorAll('section');
+    const scrollPos = window.scrollY + 200;
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop - 200) {
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
       }
     });
 
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      const href = link.getAttribute('href').substring(1);
+      if (href === current) {
         link.classList.add('active');
       }
     });
   });
+
+  /* ===== MOBILE MENU TOGGLE ===== */
+  const navToggle = document.getElementById('navToggle');
+  const navRight = document.getElementById('navRight');
+
+  if (navToggle && navRight) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navRight.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navRight.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  }
 
   /* ===== TYPING EFFECT ===== */
   const typingText = document.getElementById('typingText');
