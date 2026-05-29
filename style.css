@@ -918,3 +918,13 @@ textarea:focus {
     padding: 30px 20px;
   }
 }
+
+.tech-logo {
+    font-size: 60px;
+    margin: 0 40px;
+    transition: transform 0.3s ease;
+}
+
+.tech-logo:hover {
+    transform: scale(1.2);
+}
