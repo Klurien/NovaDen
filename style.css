@@ -920,7 +920,7 @@ textarea:focus {
 }
 
 .tech-logo {
-    font-size: 60px;
+    font-size: 120px;
     margin: 0 40px;
     transition: transform 0.3s ease;
 }
